@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  button,
+  input,
+  select,
+  textarea {
+    @apply appearance-none bg-transparent border-0 outline-none;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .all-unset {
+    all: unset;
+  }
+}
+
+:root {
+  --ryeisland-com-inter-medium-upper-font-family: "Inter", Helvetica;
+  --ryeisland-com-inter-medium-upper-font-size: 80px;
+  --ryeisland-com-inter-medium-upper-font-style: normal;
+  --ryeisland-com-inter-medium-upper-font-weight: 500;
+  --ryeisland-com-inter-medium-upper-letter-spacing: -3.200000047683716px;
+  --ryeisland-com-inter-medium-upper-line-height: 86.4000015258789px;
+  --ryeisland-com-inter-regular-upper-font-family: "Inter", Helvetica;
+  --ryeisland-com-inter-regular-upper-font-size: 422.20001220703125px;
+  --ryeisland-com-inter-regular-upper-font-style: normal;
+  --ryeisland-com-inter-regular-upper-font-weight: 400;
+  --ryeisland-com-inter-regular-upper-letter-spacing: -17.191999435424805px;
+  --ryeisland-com-inter-regular-upper-line-height: 343.8299865722656px;
+  --ryeisland-com-manrope-bold-font-family: "Manrope", Helvetica;
+  --ryeisland-com-manrope-bold-font-size: 14px;
+  --ryeisland-com-manrope-bold-font-style: normal;
+  --ryeisland-com-manrope-bold-font-weight: 700;
+  --ryeisland-com-manrope-bold-letter-spacing: 0px;
+  --ryeisland-com-manrope-bold-line-height: 18px;
+  --ryeisland-com-manrope-bold-upper-font-family: "Manrope", Helvetica;
+  --ryeisland-com-manrope-bold-upper-font-size: 32px;
+  --ryeisland-com-manrope-bold-upper-font-style: normal;
+  --ryeisland-com-manrope-bold-upper-font-weight: 700;
+  --ryeisland-com-manrope-bold-upper-letter-spacing: 0px;
+  --ryeisland-com-manrope-bold-upper-line-height: 36.47999954223633px;
+  --ryeisland-com-manrope-medium-title-font-family: "Manrope", Helvetica;
+  --ryeisland-com-manrope-medium-title-font-size: 16px;
+  --ryeisland-com-manrope-medium-title-font-style: normal;
+  --ryeisland-com-manrope-medium-title-font-weight: 500;
+  --ryeisland-com-manrope-medium-title-letter-spacing: 0px;
+  --ryeisland-com-manrope-medium-title-line-height: 20px;
+  --ryeisland-com-manrope-medium-upper-font-family: "Manrope", Helvetica;
+  --ryeisland-com-manrope-medium-upper-font-size: 44px;
+  --ryeisland-com-manrope-medium-upper-font-style: normal;
+  --ryeisland-com-manrope-medium-upper-font-weight: 500;
+  --ryeisland-com-manrope-medium-upper-letter-spacing: 0px;
+  --ryeisland-com-manrope-medium-upper-line-height: normal;
+  --ryeisland-com-manrope-regular-font-family: "Manrope", Helvetica;
+  --ryeisland-com-manrope-regular-font-size: 20px;
+  --ryeisland-com-manrope-regular-font-style: normal;
+  --ryeisland-com-manrope-regular-font-weight: 400;
+  --ryeisland-com-manrope-regular-letter-spacing: 0px;
+  --ryeisland-com-manrope-regular-line-height: 28px;
+  --ryeisland-com-manrope-regular-upper-font-family: "Manrope", Helvetica;
+  --ryeisland-com-manrope-regular-upper-font-size: 24px;
+  --ryeisland-com-manrope-regular-upper-font-style: normal;
+  --ryeisland-com-manrope-regular-upper-font-weight: 400;
+  --ryeisland-com-manrope-regular-upper-letter-spacing: 0px;
+  --ryeisland-com-manrope-regular-upper-line-height: 27.360000610351562px;
+  --ryeisland-com-manrope-semibold-upper-font-family: "Manrope", Helvetica;
+  --ryeisland-com-manrope-semibold-upper-font-size: 16px;
+  --ryeisland-com-manrope-semibold-upper-font-style: normal;
+  --ryeisland-com-manrope-semibold-upper-font-weight: 600;
+  --ryeisland-com-manrope-semibold-upper-letter-spacing: 0px;
+  --ryeisland-com-manrope-semibold-upper-line-height: 24px;
+}
+
+:root {
+  --animate-spin: spin 1s linear infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-fade-up {
+  animation: fade-up 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-marquee {
+  animation: marquee var(--duration) infinite linear;
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--duration) linear infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 8s infinite;
+}
+
+.animate-spin {
+  animation: var(--animate-spin);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes image-glow {
+  0% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.74, 0.25, 0.76, 1);
+  }
+
+  10% {
+    opacity: 0.7;
+    animation-timing-function: cubic-bezier(0.12, 0.01, 0.08, 0.99);
+  }
+
+  to {
+    opacity: 0.4;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes shimmer {
+  0%,
+  90%,
+  to {
+    background-position: calc(-100% - var(--shimmer-width)) 0;
+  }
+
+  30%,
+  60% {
+    background-position: calc(100% + var(--shimmer-width)) 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes marquee-vertical {
+  0% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}
